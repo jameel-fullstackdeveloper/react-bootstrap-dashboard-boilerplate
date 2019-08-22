@@ -14,7 +14,7 @@ function App() {
           <div className="d-flex" id="wrapper">
               <Sidebar/>
             <div id="page-content-wrapper">
-              <Navbar/>
+              <Navbar onClick={handleToggle}/>
               <Switch>
                   <Route path="/dashboard" component={Dashboard} />
                   <Route path="/" component={Home} />
@@ -27,6 +27,11 @@ function App() {
           </div>
       </React.Fragment>
 );
+}
+
+function handleToggle() {
+    let ele= document.getElementById('wrapper');
+    ele.classList.toggle("toggled")
 }
 
 export default App;
