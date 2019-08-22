@@ -8,11 +8,11 @@ const Sidebar = (props) => {
                 <div className="sidebar-heading">React - Bootstrap </div>
                     <div className="list-group list-group-flush">
                         <Link to="dashboard" className="list-group-item list-group-item-action bg-light">Dashboard</Link>
-                        <Link to="#" className="list-group-item list-group-item-action bg-light">Shortcuts</Link>
-                        <Link to="#" className="list-group-item list-group-item-action bg-light">Overview</Link>
-                        <Link to="#" className="list-group-item list-group-item-action bg-light">Events</Link>
-                        <Link to="#" className="list-group-item list-group-item-action bg-light">Profile</Link>
-                        <Link to="#" className="list-group-item list-group-item-action bg-light">Status</Link>
+                        <Link to="products" className="list-group-item list-group-item-action bg-light">Prodcuts</Link>
+                        <Link to="" className="list-group-item list-group-item-action bg-light">Overview</Link>
+                        <Link to="" className="list-group-item list-group-item-action bg-light">Events</Link>
+                        <Link to="" className="list-group-item list-group-item-action bg-light">Profile</Link>
+                        <Link to="" className="list-group-item list-group-item-action bg-light">Status</Link>
                     </div>
             </div>
         </React.Fragment>

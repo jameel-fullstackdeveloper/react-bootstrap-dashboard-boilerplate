@@ -5,7 +5,7 @@ import Sidebar from './components/sidebar';
 import Navbar from './components/navbar';
 import Dashboard from './components/dashboard';
 import Home from './components/home';
-
+import Products from './components/products';
 
 function App() {
   return (
@@ -16,12 +16,9 @@ function App() {
               <Navbar onClick={handleToggle}/>
               <Switch>
                   <Route path="/dashboard" component={Dashboard} />
+                  <Route path="/products" component={Products} />
                   <Route path="/" component={Home} />
              </Switch>
-
-
-
-
             </div>
           </div>
       </React.Fragment>

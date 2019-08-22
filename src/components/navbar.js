@@ -6,7 +6,7 @@ const Navbar = (props) => {
         <React.Fragment>
             <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <button className="btn btn-primary" id="menu-toggle" onClick={props.onClick}>
-                    <i class="fa fa-bars"></i>
+                    <i className="fa fa-bars"></i>
                 </button>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -18,19 +18,19 @@ const Navbar = (props) => {
                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">Link</a>
+                    <Link className="nav-link" to="#">Link</Link>
                     </li>
                     <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <div className="dropdown-divider"></div>
-                        <a className="dropdown-item" href="#">Something else here</a>
-                    </div>
-                    </li>
+              <Link className="nav-link dropdown-toggle" to="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </Link>
+              <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <Link className="dropdown-item" to="#">Action</Link>
+                <Link className="dropdown-item" to="#">Another action</Link>
+                <div className="dropdown-divider"></div>
+                <Link className="dropdown-item" to="#">Something else here</Link>
+              </div>
+            </li>
                 </ul>
                 </div>
              </nav>
